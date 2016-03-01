@@ -1,10 +1,22 @@
-var obj = {
-    name: 'John Doe',
-    greet:  function(){
-        console.log(`Hello ${ this.name }`); // the strange loking piece of string is the new template literal feature in ES6 for concatenating strings
+'use strict'; //ensures you don't make silly mistakes, by having the compiler lookout for you...always use in production code
+
+//minty new syntactic sugar for creating classes
+class Person{
+    constructor(firstname, lastname){
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+    
+    //this function is automatically placed on the prototype of this class. Without the .prototype syntax of before..clean, innit??
+    greet(){
+    console.log(`Hello, ${ this.firstname } ${ this.lastname }`);
     }
 }
 
-obj.greet();
-obj.greet.call({ name: 'Jane Doe'});
-obj.greet.apply({ name: 'Jane Doe'});
+var john = new Person('John', 'Doe');
+john.greet();
+
+var jane = new Person('Jane', 'Doe');
+jane.greet();
+
+ 
