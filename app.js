@@ -1,6 +1,7 @@
-'use strict';
-
-var Greetr = require('./greetr');
-
-var greeter1 = new Greetr();
-greeter1.greet('Tony');
+var buf = new Buffer('Hello', 'utf8'); 
+console.log(buf); //outputs in hx format
+console.log(buf.toString());
+console.log(buf.toJSON());
+console.log(buf[2]);
+buf.write('wo');
+console.log(buf.toString());
