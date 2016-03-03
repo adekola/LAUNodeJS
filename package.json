@@ -1,0 +1,22 @@
+{
+  "name": "launjs",
+  "version": "1.0.0",
+  "description": "Repo for Learn and Understand Nodejs course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adekola/LAUNodeJS.git"
+  },
+  "author": "Kola Adebayo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adekola/LAUNodeJS/issues"
+  },
+  "homepage": "https://github.com/adekola/LAUNodeJS#readme",
+  "dependencies": {
+    "moment": "^2.11.2"
+  }
+}
